@@ -1,0 +1,153 @@
+* {
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-style: normal;
+    line-height: 21px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: auto;
+    color: black;
+}
+
+.mainBlock__pictures {
+    display: flex;
+    justify-content: center;
+}
+
+.mainBlock__pictures-item {
+    max-height: 1080px;
+}
+
+.mainBlock__pictures-item--for_text {
+    position: relative;
+}
+
+.mainBlock__captions-title {
+    position: absolute;
+    left: 9.5%;
+    top: 45%;
+    margin-top: 500px;
+    margin: auto;
+    font-size: 58px;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    opacity: 0.85;
+    width: 525px;
+    height: 40px;
+}
+
+.mainBlock__captions-underline {
+    position: absolute;
+    left: 37%;
+    top: 51%;
+    width: 165px;
+    border-top: #FFFFFF 1px solid;
+}
+
+.mainBlock__captions-subtitle p {
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: auto;
+}
+
+.mainBlock__captions-subtitle {
+    position: absolute;
+    left: 29%;
+    top: 54%;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.mainBlock__captions-subtitle-arrow {
+    padding-bottom: 1px;
+}
+
+.categories__title {
+    margin: 120px 0 66.5px 200px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.categories__items {
+    margin: 60px 0 0 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 79%;
+}
+
+.categories__items-subtitle-button {
+    color: #FFFFFF;
+    text-decoration: auto;
+    font-size: 25px;
+}
+
+.categories__items-subtitle {
+    position: relative;
+    top: -55px;
+    width: 350px;
+    height: 39px;
+    background-color: aqua;
+    text-align: center;
+    line-height: 22px;
+    padding-top: 16px;
+    background: rgba(224, 190, 162, 0.75);
+    backdrop-filter: blur(6px);
+}
+
+.categories__items-item-button {
+    position: relative;
+    bottom: 55%;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    background-color: #E0BEA2;
+}
+
+.categories__items-item-button-arrow {
+    position: relative;
+    top: 7.5px;
+    left: 7.5px;
+}
+
+.novelties-title {
+    width: 800px;
+    margin: auto;
+    margin-top: 65px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.novelties-form-input {
+    width: 800px;
+    height: 60px;
+    display: block;
+    margin: 60px auto 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.novelties-form-submit {
+    width: 800px;
+    height: 60px;
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #E0BEA2;
+    color: #FFFFFF;
+    border: 2px solid white;
+}
+
+.novelties-subtitle {
+    width: 780px;
+    margin: 30px auto;
+    text-align: center;
+}

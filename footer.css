@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 120px auto;
+    width: 1520px;
+}
+
+.footer-flex {
+    width: 340px;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.footer p {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.footer-flex--short {
+    height: 57px;
+}
+
+.footer__contacts-telegram {
+    margin-left: 15px;
+}

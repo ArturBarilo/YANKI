@@ -8,18 +8,25 @@
     padding: 0;
 }
 
-.header {
-    position: absolute;
-    /* top: 24px; */
-    width: 100%;
-    min-width: 1000px;
-    height: 40px;
-    /* margin-top: 24px;
-    border: solid 1px black;
-    background-color: brown; */
+a {
+    text-decoration: auto;
+    color: black;
 }
 
-.header__burger-long, .header__burger-middle, .header__burger-short {
+.header {
+    position: fixed;
+    width: 100%;
+    min-width: 1000px;
+    height: 69px;
+    background: rgba(112, 107, 102, 0.502);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+
+}
+
+.header__burger-long,
+.header__burger-middle,
+.header__burger-short {
     position: absolute;
     left: 10.41%;
     height: 4px;
@@ -46,30 +53,20 @@
     left: 22.47%;
     top: 34px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 13.20%;
     min-width: 215px;
     /* height: 21px; */
-    
+
 }
 
-.header__nav-new, .header__nav-catalog, .header__nav-aboutUs {
+.header__nav-new,
+.header__nav-catalog,
+.header__nav-aboutUs {
     height: 21px;
     color: white;
     text-decoration: auto;
 }
-
-/* .header__nav-new {
-    width: 44px; 
-}
-
-.header__nav-catalog {
-    width: 80px;    
-}
-
-.header__nav-aboutUs {
-    width: 56px;
-} */
 
 .header__logo {
     position: absolute;
@@ -121,55 +118,6 @@
     min-width: 125px;
 }
 
-
-
-.mainBlock__pictures {
-    display: flex;
-    justify-content: center;
-}
-
-.mainBlock__pictures-item {
-    max-height: 1080px;
-}
-
-.mainBlock__captions-title {
-    position: absolute;
-    left: 36.3%;
-    top: 52%;
-    font-size: 58px;
-    font-weight: 500;
-    color: #FFFFFF;
-    letter-spacing: 4px;
-    opacity: 0.85;
-    width: 525px;
-    height: 40px;
-}
-
-.mainBlock__captions-underline {
-    position: absolute;
-    top: 58.8%;
-    left: 45.4%;
-    width: 165px;
-    border-top: #FFFFFF 1px solid;
-}
-
-.mainBlock__captions-subtitle p {
-    display: inline-block;
-}
-.mainBlock__captions-subtitle {
-    position: absolute;
-    top: 62%;
-    left: 44%;
-    color:#FFFFFF;
-    font-size: 18px;
-}
-
-.mainBlock__captions-subtitle-arrow {
-    padding-bottom: 3px;
-}
-
-.categories__title {
-    margin: 120px 0 66.5px 200px;
-    font-size: 40px;
-    font-weight: 600;
+.er {
+    margin-top: 50px;
 }
