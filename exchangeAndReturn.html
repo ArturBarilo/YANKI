@@ -7,14 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./header.css">
-    <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./exchangeAndReturn.css">
+    <link rel="stylesheet" href="./styles.css">
     <link type="image/x-icon" href="./images/logo-colored.svg" rel="shortcut icon">
     <link type="Image/x-icon" href="./images/logo-colored.svg" rel="icon">
     <title>Обмен и возврат</title>
 </head>
 <body>
+    <header>
     <div class="header header--white">
 
         <a class="header__burger" href="" title="menu">
@@ -24,7 +23,7 @@
         </a>
         <div class="header__nav">
             <a class="header__nav-new header__nav-new--black" href="">NEW</a>
-            <a class="header__nav-catalog header__nav-catalog--colored" href="">КАТАЛОГ</a>
+            <a class="header__nav-catalog header__nav-catalog--colored" href="./catalog.html">КАТАЛОГ</a>
             <a class="header__nav-aboutUs header__nav-aboutUs--black" href="">О НАС</a>
         </div>
         <div class="header__logo">
@@ -58,6 +57,7 @@
         </div>
 
     </div>
+</header>
 
 <p class="crutch">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni iste ipsa, illum, et aliquid similique fugiat natus expedita sed dignissimos recusandae cumque? Hic pariatur distinctio dolore temporibus et minus.</p>
 
@@ -75,18 +75,33 @@
     <div class="info__details">
         <div class="info__details-case">
             <img src="./images/label-colored.svg" width="35px" height="35px"> 
-            <p>если заказ не был использован и сохранил товарный вид(в том числе не нарушены бирки, ярлыки, упаковочные материалы)</p>
+            <p class="info__details-case">если заказ не был использован и сохранил товарный вид(в том числе не нарушены бирки, ярлыки, упаковочные материалы)</p>
         </div>
-        <div class="info__details-case"></div>
-        <div class="info__details-case"></div>
-        <div class="info__details-case"></div>
-        <div class="info__details-case"></div>
-        <div class="info__details-case"></div>
+        <div class="info__details-case">
+            <img src="./images/watch-colored.svg" width="35px" height="35px"> 
+            <p class="info__details-case">возврат и обмен осуществляется в течение двух дней с момента получения заказа</p>
+        </div>
+        <div class="info__details-case">
+            <img src="./images/scooter-colored.svg" width="35px" height="35px"> 
+            <p class="info__details-case">возврат и обмен товара возможен только при отправке по Украине</p>
+        </div>
+        <div class="info__details-case">
+            <img src="./images/gift-colored.svg" width="35px" height="35px"> 
+            <p class="info__details-case">бланк возврата присутствует в каждой посылке </p>
+        </div>
+        <div class="info__details-case">
+            <img src="./images/coin-colored.svg" width="35px" height="35px"> 
+            <p class="info__details-case">все расходы по обмену и возврату товара несет покупатель</p>
+        </div>
+        <div class="info__details-case">
+            <img src="./images/card-colored.svg" width="35px" height="35px"> 
+            <p class="info__details-case">после получения возврата мы делаем перевод денежных средств на карту клиента</p>
+        </div>
 
     </div>
 </div>
 
-
+<footer>
     <div class="footer">
         <div class="footer__company">
             <p>Компания</p>
@@ -98,7 +113,7 @@
         <div class="footer__useful">
             <p>Полезное</p>
             <div class="footer-flex">
-                <a href="">Оплата и доставка</a>
+                <a href="./paymentAndDelivery.html">Оплата и доставка</a>
                 <a href="./exchangeAndReturn.html">Условия возврата</a>
                 <a href="">Бонусная система</a>
             </div>
@@ -128,5 +143,6 @@
         </div>
 
     </div>
+</footer>
 </body>
 </html>

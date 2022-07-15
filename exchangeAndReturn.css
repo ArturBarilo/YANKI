@@ -15,7 +15,7 @@
 }
 
 .info__title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .info__subtitle1 {
@@ -23,7 +23,7 @@
 }
 
 .info__details {
-    margin: 25px auto 0;
+    margin: 30px 10.4% 180px 0; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
