@@ -16,11 +16,15 @@
     font-weight: 900;
 }
 
+.footer-flex a {
+    font-weight: 200;
+}
+
 .footer p {
     text-transform: uppercase;
     margin-bottom: 30px;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .footer-flex--short {
@@ -30,3 +34,12 @@
 .footer__contacts-telegram {
     margin-left: 15px;
 }
+
+.footer-flex-instagram,
+.footer-flex-telegram {
+    width: 25px;
+    height: 25px;
+}
+
+
+

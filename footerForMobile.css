@@ -1,0 +1,116 @@
+@media (max-width: 375px) {
+    
+    .footerForMobile {
+        display: unset;
+        
+    }
+
+    .footer {
+        display: none;
+    }
+
+    #accordion .ui-state-active {
+        background-color: white;
+        color: black;
+      }
+
+      .ui-accordion-header {
+          text-align: center;
+      }
+
+    #accordion .ui-state-default {
+        border: unset;
+        border-bottom: 1px solid black;
+        background: white;
+        font-weight: 300;
+        color: black;
+    }
+
+    #accordion .ui-state-active {
+        border: unset;
+        border-bottom: 0.3px solid #252525;
+        background-color: white;
+    }
+
+
+
+    #accordion .ui-accordion-header {
+        position: relative;
+    }
+    #accordion .ui-accordion-header-icon {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 10px;    
+        display: inline-block;
+        width: 20px;
+        height: 13px;    
+        background: url(./images/arrow-down-colored.svg) 50% 50% no-repeat;
+    }
+    #accordion .ui-accordion-header-active .ui-accordion-header-icon {
+        background-image: url(./images/arrow-down-colored.svg);
+    }
+
+    #accordion .ui-corner-all {
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: unset;
+    }
+
+    #accordion .ui-widget-content {
+        border: unset;
+    }
+
+    .footer-flex {
+        width: 375px;
+    }
+
+    .footerContactsAdaptive {
+        text-align: center;
+        
+    }
+
+    .footerForMobile div {
+        width: 335px;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-bottom: 45px;
+    }
+
+    #accordion .ui-accordion-header {
+        padding: 15px 0 5px 0;
+        font-size: 18px;
+       
+    }
+
+    .footerForMobile h3 {
+        text-transform: uppercase;
+    }
+
+    .footerContactsAdaptive p {
+        margin: 20px 0 12px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .footerContactsAdaptive a {
+        font-size: 18px;
+    }
+
+    .footerForMobile li {
+        list-style-type: none;
+    }
+
+    .footerForMobile a {
+        font-size: 18px;
+    }
+
+    .footer-flex-instagram,
+    .footer-flex-telegram {
+        width: 20px;
+        height: 20px;
+    }
+
+    
+}

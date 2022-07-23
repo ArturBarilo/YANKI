@@ -1,6 +1,15 @@
-@import "./exchangeAndReturn.css";
-@import "./footer.css";
 @import "./header.css";
+@import "./footer.css";
 @import "./mainPage.css";
+@import "./exchangeAndReturn.css";
 @import "./paymentAndDelivery.css";
 @import "./catalog.css";
+@import "./favorites.css";
+@import "./burger.css";
+@import "./catalogForMobile.css";
+@import "./headerForMobile.css";
+@import "./mainPageforMobile.css";
+@import "./footerForMobile.css";
+@import "./exchangeAndReturnForMobile.css";
+@import "./paymentAndDeliveryForMobile.css";
+@import "./favoritesForMobile.css";

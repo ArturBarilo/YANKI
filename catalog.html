@@ -1,121 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./styles.css">
     <link type="image/x-icon" href="./images/logo-colored.svg" rel="shortcut icon">
     <link type="Image/x-icon" href="./images/logo-colored.svg" rel="icon">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Каталог</title>
 </head>
+
 <body>
     <header>
         <div class="header header--white">
-    
-            <a class="header__burger" href="" title="menu">
+
+            <div id="burger" class="rightColumn burgerContent burgerContentforDesktop">
+                <ul>
+                    <a href="">
+                        <li>New</li>
+                    </a>
+                    <a href="./catalog.html" title="Каталог">
+                        <li>Каталог</li>
+                    </a>
+                    <a href="">
+                        <li>О нас</li>
+                    </a>
+                    <a href="">
+                        <li>Bestsellers</li>
+                    </a>
+                    <a href="">
+                        <li>Верхняя одежда</li>
+                    </a>
+                    <a href="">
+                        <li>Шубы</li>
+                    </a>
+                    <a href="">
+                        <li>Тренчи</li>
+                    </a>
+                    <a href="">
+                        <li>Пальто</li>
+                    </a>
+                    <a href="">
+                        <li>Пуховики и жилеты</li>
+                    </a>
+                    <a href="">
+                        <li>Костюмы</li>
+                    </a>
+                    <a href="">
+                        <li>Жакеты</li>
+                    </a>
+                    <a href="">
+                        <li>Платья</li>
+                    </a>
+                    <a href="">
+                        <li>Рубашки и блузы</li>
+                    </a>
+                    <a href="">
+                        <li>Юбки</li>
+                    </a>
+                    <a href="">
+                        <li>Футболки и топы</li>
+                    </a>
+                    <a href="">
+                        <li>Аксессуары</li>
+                    </a>
+                    <a href="">
+                        <li>Sale</li>
+                    </a>
+                    <a href="">
+                        <li>Summer</li>
+                    </a>
+                    <a href="">
+                        <li>Посмотреть всё</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="burger" onclick="toggleBurger();">
                 <div class="header__burger-long header__burger-long--colored"></div>
                 <div class="header__burger-middle header__burger-middle--colored"></div>
                 <div class="header__burger-short header__burger-short--colored"></div>
-            </a>
+            </div>
             <div class="header__nav">
                 <a class="header__nav-new header__nav-new--black" href="">NEW</a>
                 <a class="header__nav-catalog header__nav-catalog--colored" href="">КАТАЛОГ</a>
                 <a class="header__nav-aboutUs header__nav-aboutUs--black" href="">О НАС</a>
             </div>
             <div class="header__logo">
-                <img src="./images/logo-colored.svg" width="180px" height="47px" alt="logo">
+                <img class="header__logo-pic" src="./images/logo-colored.svg" width="180px" height="47px" alt="logo">
             </div>
+
             <div class="header__languages">
+                <div id="burgerLanguages" class="burgerLanguages">
+                    <ul>
+                        <a href="">
+                            <li>EN</li>
+                        </a>
+                        <a href="">
+                            <li>UA</li>
+                        </a>
+                    </ul>
+                </div>
                 <div class="header__languages-language header__languages-language--black">RU</div>
-                <a href="">
-                    <img class="header__languages-arrow" src="./images/arrow-down-black.svg" width="10px" height="10px" alt="choosing language">
-                </a>
+                <div onclick="toggleBurgerLanguages();">
+                    <img class="header__languages-arrow" src="./images/arrow-down-black.svg" width="10px" height="10px"
+                        alt="choosing language">
+                </div>
             </div>
-            <div class="header__currencys">
+            <!-- <div class="header__currencys">
                 <div class="header__currencys-currency header__currencys-currency--black">UAH</div>
                 <a href="">
                     <img class="header__currencys-arrow" src="./images/arrow-down-black.svg" width="10px" height="10px" alt="choosing choosing">
                 </a>
+            </div> -->
+            <div class="header__currencys">
+                <div id="burgerCurrencys" class="burgerCurrencys">
+                    <ul>
+                        <a href="">
+                            <li>USD</li>
+                        </a>
+                        <a href="">
+                            <li>EUR</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="header__currencys-currency header__currencys-currency--black">UAH</div>
+                <div onclick="toggleBurgercurrencys();">
+                    <img class="header__currencys-arrow" src="./images/arrow-down-black.svg" width="10px" height="10px"
+                        alt="choosing choosing">
+                </div>
             </div>
             <div class="header__leftSideSigns">
                 <a class="header__leftSideSigns-item" href="" title="search">
-                    <img src="./images/search-black.svg" alt="search" width="30px" height="30px">
+                    <img class="header__leftSideSigns-item-search-black" src="./images/search-black.svg" alt="search"
+                        width="30px" height="30px">
                 </a>
                 <a class="header__leftSideSigns-item" href="" title="user">
-                    <img src="./images/user-colored.svg" alt="user" width="30px" height="30px">
+                    <img class="header__leftSideSigns-item-user-colored" src="./images/user-colored.svg" alt="user"
+                        width="30px" height="30px">
                 </a>
-                <a class="header__leftSideSigns-item" href="" title="favorites">
-                    <img src="./images/favorites-colored.svg" alt="favorites" width="30px" height="30px">
+                <a class="header__leftSideSigns-item" href="./favorites.html" title="favorites">
+                    <img class="header__leftSideSigns-item-favorites-colored" src="./images/favorites-colored.svg"
+                        alt="favorites" width="30px" height="30px">
                 </a>
                 <a class="header__leftSideSigns-item" href="" title="cart">
-                    <img src="./images/cart-colored.svg" alt="cart" width="30px" height="30px">
+                    <img class="header__leftSideSigns-item-cart-colored" src="./images/cart-colored.svg" alt="cart"
+                        width="30px" height="30px">
                 </a>
             </div>
-    
+
         </div>
     </header>
-    
-    <p class="crutch">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit magni iste ipsa, illum, et aliquid similique fugiat natus expedita sed dignissimos recusandae cumque? Hic pariatur distinctio dolore temporibus et minus.</p>
-    
-    
+
+    <p class="crutch">L</p>
+
+
     <div class="location">
-        <a class="location__item" href="./mainPage.html">Главная</a>      
+        <a class="location__item" href="./mainPage.html">Главная</a>
         <img class="location__icon" src="./images/arrow-right-colored.svg" width="10px" height="10px">
         <p class="location__item">Каталог</p>
     </div>
+    <!-- <div class="boot">
+       
+          
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="./mainPage.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+            </ol>
+          </nav>
+          
+    </div> -->
 
     <div class="rightColumn">
         <p class="rightColumn__title">Каталог</p>
         <ul>
-            <a href=""><li>New</li></a>
-            <a href=""><li>Bestsellers</li></a>
-            <a href=""><li>Верхняя одежда</li></a>
-            <a href=""><li>Шубы</li></a>
-            <a href=""><li>Тренчи</li></a>
-            <a href=""><li>Пальто</li></a>
-            <a href=""><li>Пуховики и жилеты</li></a>
-            <a href=""><li>Костюмы</li></a>
-            <a href=""><li>Жакеты</li></a>
-            <a href=""><li>Платья</li></a>
-            <a href=""><li>Рубашки и блузы</li></a>
-            <a href=""><li>Юбки</li></a>
-            <a href=""><li>Футболки и топы</li></a>
-            <a href=""><li>Аксессуары</li></a>
-            <a href=""><li>Sale</li></a>
-            <a href=""><li>Summer</li></a>
-            <a href=""><li>Посмотреть всё</li></a>
+            <a href="">
+                <li>New</li>
+            </a>
+            <a href="">
+                <li>Bestsellers</li>
+            </a>
+            <a href="">
+                <li>Верхняя одежда</li>
+            </a>
+            <a href="">
+                <li>Шубы</li>
+            </a>
+            <a href="">
+                <li>Тренчи</li>
+            </a>
+            <a href="">
+                <li>Пальто</li>
+            </a>
+            <a href="">
+                <li>Пуховики и жилеты</li>
+            </a>
+            <a href="">
+                <li>Костюмы</li>
+            </a>
+            <a href="">
+                <li>Жакеты</li>
+            </a>
+            <a href="">
+                <li>Платья</li>
+            </a>
+            <a href="">
+                <li>Рубашки и блузы</li>
+            </a>
+            <a href="">
+                <li>Юбки</li>
+            </a>
+            <a href="">
+                <li>Футболки и топы</li>
+            </a>
+            <a href="">
+                <li>Аксессуары</li>
+            </a>
+            <a href="">
+                <li>Sale</li>
+            </a>
+            <a href="">
+                <li>Summer</li>
+            </a>
+            <a href="">
+                <li>Посмотреть всё</li>
+            </a>
         </ul>
     </div>
 
-    <div class="filter">
-        <div class="filter__size">
-            <p>Размер</p>
-            <img src="./images/arrow-down-colored.svg">
-        </div>
-        <div class="filter__color">
-            <p>Цвет</p>
-            <img src="./images/arrow-down-colored.svg">
-        </div>
-        <div class="filter__price">
-            <p>Цена</p>
-            <img src="./images/arrow-down-colored.svg">
-        </div>
-        <div class="filter__sortBy">
-            <p>Сортировать по</p>
-            <img src="./images/arrow-down-colored.svg">
+    <div class="filter forDescktop">
+        
+            <div>
+                <div id="burgerFilterSize" class="burgerFilterSize">
+                    <ul>
+                        <a href="">
+                            <li>S</li>
+                        </a>
+                        <a href="">
+                            <li>M</li>
+                        </a>
+                        <a href="">
+                            <li>L</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="burgerSize" onclick="toggleBurgerSize();">
+                    <div class="filter__size">
+                        <p>Размер</p>
+                        <img src="./images/arrow-down-colored.svg" width="15px" height="15px">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="burgerFilterColor" class="burgerFilterColor">
+                    <ul>
+                        <a href="">
+                            <li>
+                                <div class="catalog__item-info-colors1"></div>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <div class="catalog__item-info-colors2"></div>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li>
+                                <div class="catalog__item-info-colors3"></div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="burgerColor" onclick="toggleBurgerColor();">
+                    <div class="filter__color">
+                        <p>Цвет</p>
+                        <img src="./images/arrow-down-colored.svg" width="15px" height="15px">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="burgerFilterPrice" class="burgerFilterPrice">
+                    <ul>
+                        <a href="">
+                            <li>1000грн</li>
+                        </a>
+                        <a href="">
+                            <li>2000грн</li>
+                        </a>
+                        <a href="">
+                            <li>5000грн</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="burgerSize" onclick="toggleBurgerPrice();">
+                    <div class="filter__price">
+                        <p>Цена</p>
+                        <img src="./images/arrow-down-colored.svg" width="15px" height="15px">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="burgerFilterSortBy" class="burgerFilterSortBy">
+                    <ul>
+                        <a href="">
+                            <li>Размеру</li>
+                        </a>
+                        <a href="">
+                            <li>Цвету</li>
+                        </a>
+                        <a href="">
+                            <li>Цене</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="burgerSize" onclick="toggleBurgerSortBy();">
+                    <div class="filter__sortBy">
+                        <p>Сортировать по</p>
+                        <img src="./images/arrow-down-colored.svg" width="15px" height="15px">
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+
+
+
+    <div class="catalogAccordionForMobile">
+        <div id="accordion2">
+            <h3>Каталог</h3>
+            <div>
+                <ul>
+                <a href="">
+                    <li>Bestsellers</li>
+                </a>
+                <a href="">
+                    <li>Верхняя одежда</li>
+                </a>
+                <a href="">
+                    <li>Шубы</li>
+                </a>
+                <a href="">
+                    <li>Тренчи</li>
+                </a>
+                <a href="">
+                    <li>Пальто</li>
+                </a>
+                <a href="">
+                    <li>Пуховики и жилеты</li>
+                </a>
+                <a href="">
+                    <li>Костюмы</li>
+                </a>
+                <a href="">
+                    <li>Жакеты</li>
+                </a>
+                <a href="">
+                    <li>Платья</li>
+                </a>
+                <a href="">
+                    <li>Рубашки и блузы</li>
+                </a>
+                <a href="">
+                    <li>Юбки</li>
+                </a>
+                <a href="">
+                    <li>Футболки и топы</li>
+                </a>
+                <a href="">
+                    <li>Аксессуары</li>
+                </a>
+                <a href="">
+                    <li>Sale</li>
+                </a>
+                <a href="">
+                    <li>Summer</li>
+                </a>
+                <a href="">
+                    <li>Посмотреть всё</li>
+                </a>
+            
+                </ul>
+            </div>
         </div>
     </div>
 
 
-    
+    <div class="filterAccordionForMobile">
+        <div id="accordion3">
+            <h3>Фильтры
+                <img src="./images/filter-colored.svg" width="20px" height="13px"> 
+            </h3>
+            <div>
+                <ul>
+                <li><label>
+                    <input type="checkbox"/>
+                    Размер
+                  </label></li>
+                  <li><label>
+                    <input type="checkbox"/>
+                    Цвет
+                  </label></li>
+                  <li><label>
+                    <input type="checkbox"/>
+                    Цена
+                  </label></li>
+                  
+                  <a href=""><li>Сортировать по</li></a>
+                
+                <!-- <li>Цвет</li>
+                
+                <li>Цена</li> -->
+                
+                
+                </ul>
+            </div>
+    </div>
+    </div>
+
+
+
+    <div class="catalog">
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/white_winter_coat-short.png"
+                    alt="Белая куртка" width="410px" height="430px">
+                <img class="catalog__item-img-for-mobile" src="./images/Rectangle 11.png" alt="Белая куртка">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Белая куртка <span>new</span></p>
+                    </div>
+                    <p class="catalog__item-info-price">2900 грн</p>
+                    <p class="catalog__item-info-size">XXS XS S M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/dark_light_coat-short.png"
+                    alt="Синее пальто" width="410px" height="430px">
+                <img class="catalog__item-img catalog__item-img-for-mobile" src="./images/Rectangle 111.png"
+                    alt="Синее пальто">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Синее пальто</p>
+                    </div>
+                    <p class="catalog__item-info-price">3150 грн</p>
+                    <p class="catalog__item-info-size">XS M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/white_warm_coat-short.png"
+                    alt="Бежевая шуба" width="410px" height="430px">
+                <img class="catalog__item-img catalog__item-img-for-mobile" src="./images/Rectangle 1111.png"
+                    alt="Бежевая шуба">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Бежевая шуба</p>
+                    </div>
+                    <p class="catalog__item-info-price">4200 грн</p>
+                    <p class="catalog__item-info-size">XS S L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/dark_winter_jacket-short.png"
+                    alt="Синяя парка" width="410px" height="430px">
+                <img class="catalog__item-img catalog__item-img-for-mobile" src="./images/Rectangle 11111.png"
+                    alt="Синяя парка">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Синяя парка</p>
+                    </div>
+                    <p class="catalog__item-info-price">2900 грн</p>
+                    <p class="catalog__item-info-size">XXS XS S M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/white_winter_coat-short.png"
+                    alt="Белая куртка" width="410px" height="430px">
+                <img class="catalog__item-img-for-mobile" src="./images/Rectangle 11.png" alt="Белая куртка">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Белая куртка <span>new</span></p>
+                    </div>
+                    <p class="catalog__item-info-price">2900 грн</p>
+                    <p class="catalog__item-info-size">XXS XS S M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/dark_light_coat-short.png"
+                    alt="Синее пальто" width="410px" height="430px">
+                <img class="catalog__item-img catalog__item-img-for-mobile" src="./images/Rectangle 111.png"
+                    alt="Синее пальто">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Синее пальто</p>
+                    </div>
+                    <p class="catalog__item-info-price">3150 грн</p>
+                    <p class="catalog__item-info-size">XS M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/white_winter_coat-short.png"
+                    alt="Белая куртка" width="410px" height="430px">
+                <img class="catalog__item-img-for-mobile" src="./images/Rectangle 11.png" alt="Белая куртка">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Белая куртка <span>new</span></p>
+                    </div>
+                    <p class="catalog__item-info-price">2900 грн</p>
+                    <p class="catalog__item-info-size">XXS XS S M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/dark_light_coat-short.png"
+                    alt="Синее пальто" width="410px" height="430px">
+                <img class="catalog__item-img catalog__item-img-for-mobile" src="./images/Rectangle 111.png"
+                    alt="Синее пальто">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Синее пальто</p>
+                    </div>
+                    <p class="catalog__item-info-price">3150 грн</p>
+                    <p class="catalog__item-info-size">XS M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/white_warm_coat-short.png"
+                    alt="Бежевая шуба" width="410px" height="430px">
+                <img class="catalog__item-img catalog__item-img-for-mobile" src="./images/Rectangle 1111.png"
+                    alt="Бежевая шуба">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Бежевая шуба</p>
+                    </div>
+                    <p class="catalog__item-info-price">4200 грн</p>
+                    <p class="catalog__item-info-size">XS S L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/dark_winter_jacket-short.png"
+                    alt="Синяя парка" width="410px" height="430px">
+                <img class="catalog__item-img catalog__item-img-for-mobile" src="./images/Rectangle 11111.png"
+                    alt="Синяя парка">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Синяя парка</p>
+                    </div>
+                    <p class="catalog__item-info-price">2900 грн</p>
+                    <p class="catalog__item-info-size">XXS XS S M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/white_winter_coat-short.png"
+                    alt="Белая куртка" width="410px" height="430px">
+                <img class="catalog__item-img-for-mobile" src="./images/Rectangle 11.png" alt="Белая куртка">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Белая куртка <span>new</span></p>
+                    </div>
+                    <p class="catalog__item-info-price">2900 грн</p>
+                    <p class="catalog__item-info-size">XXS XS S M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./cardProduct" title="Карточка товара">
+            <div class="catalog__item">
+                <img class="catalog__item-img hidden-for-mobile" src="./images/catalog/dark_light_coat-short.png"
+                    alt="Синее пальто" width="410px" height="430px">
+                <img class="catalog__item-img catalog__item-img-for-mobile" src="./images/Rectangle 111.png"
+                    alt="Синее пальто">
+                <div class="catalog__item-favorite">
+                    <img class="catalog__item-favorite-icon" src="./images/favorites.svg" width="20px" height="20px">
+                </div>
+                <div class="catalog__item-info">
+                    <div class="catalog__item-info-new">
+                        <p>Синее пальто</p>
+                    </div>
+                    <p class="catalog__item-info-price">3150 грн</p>
+                    <p class="catalog__item-info-size">XS M L</p>
+                    <div>
+                        <div class="catalog__item-info-colors1"></div>
+                        <div class="catalog__item-info-colors2"></div>
+                        <div class="catalog__item-info-colors3"></div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+
 
 
 
     <footer>
+        <div class="footerForMobile forCatalog">
+            <div id="accordion">
+                <h3>Компания</h3>
+                <div>
+                    <ul>
+                        <li><a href="" >О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <h3>Полезное</h3>
+                <div>
+                    <ul>
+                        <li><a href="./paymentAndDelivery.html">Оплата и доставка</a></li>
+                        <li><a href="./exchangeAndReturn.html">Условия возврата</a></li>
+                        <li><a href="">Бонусная система</a></li>
+                    </ul>
+                </div>
+
+                <h3>Покупателю</h3>
+                <div>
+                    <ul>
+                        <li><a href="">Избранное</a></li>
+                        <li><a href="">Публичная оферта</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="footerContactsAdaptive">
+                <p>Контакты</p>
+                <div class="footer-flex">
+                    <div>
+                        <a href="">
+                            <img class="footer-flex-instagram" src="./images/instagram.svg" alt="instagram" width="25px"
+                                height="25px">
+                        </a>
+                        <a class="footer__contacts-telegram" href="">
+                            <img class="footer-flex-telegram" src="./images/telegram.svg" alt="telegram" width="25px"
+                                height="25px">
+                        </a>
+                    </div>
+                    <a href="tel:+38(073) 096 36 44">+38(073) 096 36 44</a>
+                    <a href="mailto:info@yanki.com">info@yanki.com</a>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
         <div class="footer">
             <div class="footer__company">
                 <p>Компания</p>
@@ -151,12 +812,45 @@
                             <img src="./images/telegram.svg" alt="telegram" width="25px" height="25px">
                         </a>
                     </div>
-                    <a href="">+38(073) 096 36 44</a>
-                    <a href="">info@yanki.com</a>
+                    <a href="tel:+38(073) 096 36 44">+38(073) 096 36 44</a>
+                    <a href="mailto:info@yanki.com">info@yanki.com</a>
                 </div>
             </div>
-    
+
         </div>
     </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+    <!-- <script>
+        $(".active").before("<img src='./images/arrow-right-colored.svg' class='navArrow' />");
+    </script> -->
+    <script src="./burger.js"></script>
+    <script>
+        // $('#accordion').accordion({active: true});
+        $(function () {
+            $("#accordion").accordion({
+                active: false,
+                collapsible: true
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#accordion2").accordion({
+                active: false,
+                collapsible: true
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#accordion3").accordion({
+                active: false,
+                collapsible: true
+            });
+        });
+    </script>
 </body>
+
 </html>

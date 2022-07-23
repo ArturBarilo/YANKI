@@ -1,0 +1,26 @@
+.wrap {
+    margin: 35px 0 100px 10.4%;
+}
+
+.favorites-title {
+    margin: 35px 0 0 10.4%;
+}
+
+.catalog__item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.catalog__item-favorite--upper {
+    position: relative;
+    bottom: 434px;
+    left: 360px;
+}
+
+.catalog__item-img-for-mobile {
+    display: none;
+}
+
+.footerForMobile {
+    display: none;
+}

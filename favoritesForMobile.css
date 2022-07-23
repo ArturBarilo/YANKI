@@ -1,0 +1,84 @@
+@media (max-width: 375px) {
+
+.favorites-title {
+    margin: 15px 0 0 20px;
+}
+
+.catalog__item-img-for-desktop {
+    display: none;
+}
+
+.catalog__item-img-for-mobile {
+    display: unset;
+}
+
+.catalog__item-img-for-mobile {
+    width: 165px;
+    height: 230px;
+}
+
+.catalog__item {
+    width: 165px;
+    height: 300px;
+    margin-right: 5px;
+}
+
+.catalog__item-favorite {
+    bottom: 234px;
+    left: 130px;
+    width: 35px;
+    height: 35px;
+}
+
+.catalog__item-favorite-icon {
+    width: 13px;
+    height: 12px;
+    top: 6px;
+    left: 12px;
+}
+
+.catalog__item-info-new p,
+.catalog__item-info-new span,
+.catalog__item-info-price,
+.catalog__item-info-size {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.catalog__item-info-price {
+    font-weight: 700;
+}
+
+.catalog__item-info {
+    width: 165px;
+    height: 90px;
+    bottom: 30px;
+}
+
+.catalog__item-info-new p span {
+    margin-left: 5px;
+}
+
+/* .catalog__item-info-new p {
+    margin: 0 0 0 58px;
+} */
+
+.catalog__item-info-colors1,
+.catalog__item-info-colors2,
+.catalog__item-info-colors3 {
+    width: 14px;
+    height: 14px;
+}
+
+.wrap {
+    margin: 20px 20px 30px 20px;
+    display: flex;
+}
+
+
+
+
+
+}
+
+

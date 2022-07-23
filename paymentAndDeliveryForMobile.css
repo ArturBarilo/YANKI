@@ -1,0 +1,152 @@
+@media (max-width: 375px) {
+
+    .burgerContentforDesktop {
+        display: none;
+    }
+
+    .burgerContentforMobile {
+        display: unset;
+    }
+
+    
+
+    .location a,
+    .location p {
+        font-size: 16px;
+    }
+
+    .info {
+        margin: 15px 0 0 20px;
+    }
+
+    .info__title {
+        margin-bottom: 15px;
+    }
+
+    .info__details-text-payment p, li {
+        font-size: 14px;
+    }
+
+    .info__details-text-payment,
+    .info__details-text-delivery {
+        width: 335px;
+    }
+
+    .info__details-text {
+        flex-direction: column;
+    }
+
+    .info__details-text-payment-ways {
+        margin-bottom: 10px;
+    }
+
+    .info__details-text-payment li,
+    .info__details-text-delivery li {
+        margin:0 0 5px 20px;
+    }
+
+    .info__details-text-delivery-ways {
+        margin: 10px 0 10px 0;
+        font-size: 14px;
+        width: 335px;
+    }
+
+    .info__LIQPAY-title {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .info__LIQPAY-wrapper {
+        flex-direction: column;
+    }
+
+    .info__LIQPAY-steps {
+        width: 335px;
+        margin-top: 15px;
+    }
+
+    .info__LIQPAY-wrapper p {
+        font-size: 14px;
+        
+    }
+
+    .triangle-colored {
+        width: 19.5px;
+        height: 27.4px;
+    }
+
+    .info__LIQPAY-steps-1-arrow {
+        width: 27.6px;
+        height: 38.9px;
+        bottom: 59px;
+        left: unset;
+        right: -7px;
+    }
+
+    .info__LIQPAY-steps-1-number {
+        bottom: 29px;
+        left: 1px;
+        font-size: 10px !important;
+        font-weight: 500;
+    }
+    
+    .info__LIQPAY-steps {
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .info__LIQPAY-steps--short {
+        height: 20px !important;
+        margin-top: unset !important;
+    }
+
+    .info__LIQPAY-steps--long {
+        width: 275px;
+        height: 100px;
+    }
+
+    .info__LIQPAY-steps div {
+        margin-bottom: 24px;
+    }
+
+    .info__LIQPAY-steps-title0,
+    .info__LIQPAY-steps-title,
+    .info__LIQPAY-steps-title2 {
+        margin-top: 24px;
+        width: 275px;
+    }
+
+    .info__LIQPAY-steps-title {
+        height: 20px;
+    }
+    
+    .info__LIQPAY-steps-title2 {
+        width: 275px;
+        height: 100px;
+    }
+
+    .info__LIQPAY-steps-title0 {
+        position: relative;
+        bottom: 32px;
+    }
+
+    .info__LIQPAY-steps-title {
+        position: relative;
+        bottom: 23px;
+    }
+
+    .info__LIQPAY-steps-title2 {
+        position: relative;
+        bottom: 23px;
+        left: 30px;
+    }
+
+    .info__LIQPAY-steps-image--long {
+        position: relative;
+        top: 45px;
+    }
+    
+    .info {
+        margin-bottom: 60px;
+    }
+}

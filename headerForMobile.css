@@ -1,0 +1,108 @@
+@media (max-width: 375px) {
+
+    .header {
+        width: 375px;
+        min-width: 1px;
+    }
+    
+    .header__burger-long,
+    .header__burger-middle,
+    .header__burger-short {
+        left: 20px;
+        top: 20px;
+    }
+
+    .header__burger-middle {
+        top: 30px;
+    }
+
+    .header__burger-short {
+        top: 40px;
+    }
+    
+    .header__nav {
+        display: none;
+    }
+
+    .header__languages-language,
+    .header__languages-language--black {
+        font-size: 16px;
+        left: 76px;
+        top: 23px;
+    }
+
+    .header__languages-arrow {
+        top: 29px;
+        left: 106.49px;
+    }
+
+    .burgerLanguages {
+        top: 45px;
+        left: 75px;
+        width: 40px;
+        
+    }
+
+    .burgerLanguages li {
+        font-size: 16px;
+        padding: 0 0 0 8px;
+    }
+
+    .header__currencys {
+        display: none;
+    }
+
+    .header__logo {
+        left: 148px;
+        top: 22px;
+    }
+
+    .header__logo-pic {
+        width: 97.4px;
+        height: 20px;
+    }
+
+    .header__leftSideSigns {
+        left: 275px;
+        top: 23px;
+        min-width: 59px;
+        width: 60px;
+        display: inline;
+    }
+
+    .header__leftSideSigns-item-search,
+    .header__leftSideSigns-item-user,
+    .header__leftSideSigns-item-search-black,
+    .header__leftSideSigns-item-user-colored {
+        display: none;
+    }
+    
+    .header__leftSideSigns-item-cart,
+    .header__leftSideSigns-item-cart-colored {
+        width: 19.68px;
+        height: 20px;
+        position: relative;
+        left: 20px;
+    }
+
+    .header__leftSideSigns-item-favorites,
+    .header__leftSideSigns-item-favorites-colored {
+        
+        width: 20px;
+        height: 18.48px;
+    }
+
+    .burgerContent {
+        width: 200px;
+        right: 30px;
+        padding-top: 1px;
+    }
+
+    .burgerContent a li {
+        font-size: 16px;
+    }
+
+    .rightColumn li {
+        margin: 10px;
+    }
+}

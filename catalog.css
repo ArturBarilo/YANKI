@@ -1,3 +1,20 @@
+li {
+    text-decoration: auto;
+}
+
+a {
+    text-decoration: auto;
+}
+
+.navArrow {
+    width: 0.9em;
+    height: 0.9em;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    /* margin: 0 5px 0 5px; */
+}
+
 .rightColumn {
     width: 200px;
     margin: 35px 0 0 10.4%;
@@ -5,13 +22,14 @@
 }
 
 .rightColumn__title {
-    margin-bottom: 35px;
+    margin: 0 0  20%;
+    font-size: 25px;
 }
 
 .rightColumn li {
     margin: 0 0 25px 0;
     list-style-type: none;
-    font-weight: 900;
+    font-weight: 300;
 }
 
 .filter p,
@@ -31,7 +49,126 @@
     margin-right: 15px;
 }
 
+/* .filter div {
+    display: inline-block;
+} */
+
+/* .filter__size,
+.filter__color,
+.filter__price,
+.filter__sortBy {
+    display: inline-block;
+} */
+
 .filter {
-    margin: 35px 0 35px 22.9%; 
+    margin: 60px 0 35px 23.9%; 
+    display: flex;
+    
 }
+
+.boot {
+    margin: 80px 0 10px 10.4%;
+}
+
+.catalog {
+    float: right;
+    margin: 0 10.4% 120px 45px;
+    display: grid;
+    grid-template-columns: 410px 410px 410px;
+    grid-gap: 16px;
+}
+
+.catalog__item {
+    width: 410px;
+    height: 550px;
+    margin: 5px 5px 50px 0;
+}
+
+.catalog__item-img {
+    width: 410px;
+    height: 430px;
+}
+
+.catalog__item-favorite {
+    width: 50px;
+    height: 50px;
+    background: #E0BEA2;
+    border-radius: 0px 0px 0px 20px;
+    position: relative;
+    bottom: 434px;
+    left: 360px;
+}
+
+.catalog__item-favorite-icon {
+    position: relative;
+    top: 14px;
+    left: 14px;
+}
+
+.catalog__item-info {
+    width: 200px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    bottom: 25px;
+}
+
+.catalog__item-info-new span{
+    color: #E0BEA2;
+    margin-left: 20px;
+}
+
+.catalog__item-info p {
+    display: block;
+    margin: auto;
+}
+
+.catalog__item-info-colors1,
+.catalog__item-info-colors2,
+.catalog__item-info-colors3 {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.catalog__item-info-colors1 {
+    background-color: white;
+    border: 1px #252525 solid;
+}
+
+.catalog__item-info-colors2 {
+    background-color: #6F83A4;
+}
+.catalog__item-info-colors3 {
+    background-color: #F1DDAA;
+}
+
+.catalog__item-info-price {
+    font-weight: 700;
+}
+
+.catalog__item-info-size,
+.catalog__item-info-new p {
+    font-weight: 300;
+}
+
+.filterForMobile {
+    display: none;
+}
+
+.catalogAccordionForMobile,
+.filterAccordionForMobile {
+    display: none;
+}
+
+
+
+
+
+
 

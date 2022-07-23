@@ -7,67 +7,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./styles.css">
     <link type="image/x-icon" href="./images/logo-colored.svg" rel="shortcut icon">
     <link type="Image/x-icon" href="./images/logo-colored.svg" rel="icon">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Главная страница</title>
 </head>
 
 <body>
     <header>
-    <div class="header">
+        <div class="header">
 
-        <a class="header__burger" href="" title="menu">
-            <div class="header__burger-long"></div>
-            <div class="header__burger-middle"></div>
-            <div class="header__burger-short"></div>
-        </a>
-        <div class="header__nav">
-            <a class="header__nav-new" href="">NEW</a>
-            <a class="header__nav-catalog" href="./catalog.html">КАТАЛОГ</a>
-            <a class="header__nav-aboutUs" href="">О НАС</a>
-        </div>
-        <div class="header__logo">
-            <img src="./images/YANKI.svg" width="180px" height="47px" alt="logo">
-        </div>
-        <div class="header__languages">
-            <div class="header__languages-language">RU</div>
-            <a href="">
-                <img class="header__languages-arrow" src="./images/arrow-down.svg" width="10px" height="10px" alt="choosing language">
-            </a>
-        </div>
-        <div class="header__currencys">
-            <div class="header__currencys-currency">UAH</div>
-            <a href="">
-                <img class="header__currencys-arrow" src="./images/arrow-down.svg" width="10px" height="10px" alt="choosing choosing">
-            </a>
-        </div>
-        <div class="header__leftSideSigns">
-            <a class="header__leftSideSigns-item" href="" title="search">
-                <img src="./images/search.svg" alt="search" width="30px" height="30px">
-            </a>
-            <a class="header__leftSideSigns-item" href="" title="user">
-                <img src="./images/user.svg" alt="user" width="30px" height="30px">
-            </a>
-            <a class="header__leftSideSigns-item" href="" title="favorites">
-                <img src="./images/favorites.svg" alt="favorites" width="30px" height="30px">
-            </a>
-            <a class="header__leftSideSigns-item" href="" title="cart">
-                <img src="./images/cart.svg" alt="cart" width="30px" height="30px">
-            </a>
-        </div>
+            <div id="burger" class="rightColumn burgerContent burgerContentforDesktop">
+                <ul>
+                    <a href="">
+                        <li>New</li>
+                    </a>
+                    <a href="./catalog.html">
+                        <li>Каталог</li>
+                    </a>
+                    <a href="">
+                        <li>О нас</li>
+                    </a>
+                    <a href="">
+                        <li>Bestsellers</li>
+                    </a>
+                    <a href="">
+                        <li>Верхняя одежда</li>
+                    </a>
+                    <a href="">
+                        <li>Шубы</li>
+                    </a>
+                    <a href="">
+                        <li>Тренчи</li>
+                    </a>
+                    <a href="">
+                        <li>Пальто</li>
+                    </a>
+                    <a href="">
+                        <li>Пуховики и жилеты</li>
+                    </a>
+                    <a href="">
+                        <li>Костюмы</li>
+                    </a>
+                    <a href="">
+                        <li>Жакеты</li>
+                    </a>
+                    <a href="">
+                        <li>Платья</li>
+                    </a>
+                    <a href="">
+                        <li>Рубашки и блузы</li>
+                    </a>
+                    <a href="">
+                        <li>Юбки</li>
+                    </a>
+                    <a href="">
+                        <li>Футболки и топы</li>
+                    </a>
+                    <a href="">
+                        <li>Аксессуары</li>
+                    </a>
+                    <a href="">
+                        <li>Sale</li>
+                    </a>
+                    <a href="">
+                        <li>Summer</li>
+                    </a>
+                    <a href="">
+                        <li>Посмотреть всё</li>
+                    </a>
+                </ul>
+            </div>
 
-    </div>
-</header>
+            <!-- <div id="burger" class="rightColumn burgerContent burgerContentforMobile">
+                <ul>
+                    <a href="">
+                        <li>New</li>
+                    </a>
+                    <a href="./catalog.html">
+                        <li>Каталог</li>
+                    </a>
+                    <a href="">
+                        <li>О нас</li>
+                    </a>
+                    <a href="">
+                        <li>Bestsellers</li>
+                    </a>
+                    <a href="">
+                        <li>Верхняя одежда</li>
+                    </a>
+                    <a href="">
+                        <li>Шубы</li>
+                    </a>
+                    <a href="">
+                        <li>Тренчи</li>
+                    </a>
+                    <a href="">
+                        <li>Пальто</li>
+                    </a>
+                    <a href="">
+                        <li>Пуховики и жилеты</li>
+                    </a>
+                    <a href="">
+                        <li>Костюмы</li>
+                    </a>
+                    <a href="">
+                        <li>Жакеты</li>
+                    </a>
+                    <a href="">
+                        <li>Платья</li>
+                    </a>
+                    <a href="">
+                        <li>Рубашки и блузы</li>
+                    </a>
+                    <a href="">
+                        <li>Юбки</li>
+                    </a>
+                    <a href="">
+                        <li>Футболки и топы</li>
+                    </a>
+                    <a href="">
+                        <li>Аксессуары</li>
+                    </a>
+                    <a href="">
+                        <li>Sale</li>
+                    </a>
+                    <a href="">
+                        <li>Summer</li>
+                    </a>
+                    <a href="">
+                        <li>Посмотреть всё</li>
+                    </a>
+                </ul>
+            </div> -->
+
+            <div class="burger" onclick="toggleBurger();">
+                <div class="header__burger-long"></div>
+                <div class="header__burger-middle"></div>
+                <div class="header__burger-short"></div>
+            </div>
+            <div class="header__nav">
+                <a class="header__nav-new" href="">NEW</a>
+                <a class="header__nav-catalog" href="./catalog.html">КАТАЛОГ</a>
+                <a class="header__nav-aboutUs" href="">О НАС</a>
+            </div>
+            <div class="header__logo">
+                <img class="header__logo-pic" src="./images/YANKI.svg" alt="logo">
+                <!-- <img class="logo-forMobile" src="./images/logo-forMobile.svg"  alt="logo"> -->
+            </div>
+            <div class="header__languages">
+                <div id="burgerLanguages" class="burgerLanguages">
+                    <ul>
+                        <a href="">
+                            <li>EN</li>
+                        </a>
+                        <a href="">
+                            <li>UA</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="header__languages-language">RU</div>
+                <div onclick="toggleBurgerLanguages();">
+                    <img class="header__languages-arrow" src="./images/arrow-down.svg" width="10px" height="10px"
+                        alt="choosing language">
+                </div>
+            </div>
+            <div class="header__currencys">
+                <div id="burgerCurrencys" class="burgerCurrencys">
+                    <ul>
+                        <a href="">
+                            <li>USD</li>
+                        </a>
+                        <a href="">
+                            <li>EUR</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="header__currencys-currency">UAH</div>
+                <div onclick="toggleBurgercurrencys();">
+                    <img class="header__currencys-arrow" src="./images/arrow-down.svg" width="10px" height="10px"
+                        alt="choosing choosing">
+                </div>
+            </div>
+            <div class="header__leftSideSigns">
+                <a class="header__leftSideSigns-item" href="" title="search">
+                    <img class="header__leftSideSigns-item-search" src="./images/search.svg" alt="search" width="30px"
+                        height="30px">
+                </a>
+                <a class="header__leftSideSigns-item" href="" title="user">
+                    <img class="header__leftSideSigns-item-user" src="./images/user.svg" alt="user" width="30px"
+                        height="30px">
+                </a>
+                <a class="header__leftSideSigns-item" href="./favorites.html" title="favorites">
+                    <img class="header__leftSideSigns-item-favorites" src="./images/favorites.svg" alt="favorites"
+                        width="30px" height="30px">
+                </a>
+                <a class="header__leftSideSigns-item" href="" title="cart">
+                    <img class="header__leftSideSigns-item-cart" src="./images/cart.svg" alt="cart" width="30px"
+                        height="30px">
+                </a>
+            </div>
+
+        </div>
+    </header>
 
     <div class="mainBlock">
         <div class="mainBlock__pictures">
-            <img class="mainBlock__pictures-item" src="./images/mainBlock/white_winter_coat.png" alt="white_winter_coat"
-                width="640">
-            <div class="mainBlock__pictures-item--for_text">
-                <img class="mainBlock__pictures-item" src="./images/mainBlock/light_overcoat.png" alt="light_overcoat"
-                    width="640">
+            <!-- <div class="mainBlock__pictures-item--for_text mainBlock__pictures-item1 mainBlock-forMobile">
+                <img class="mainBlock__pictures-item mainBlock__pictures-item0"
+                    src="./images/mainBlock/white_winter_coat.png" alt="light_overcoat">
+                <div class="mainBlock__captions-title">Новая коллекция</div>
+                <div class="mainBlock__captions-underline"></div>
+                <a class="mainBlock__captions-subtitle" href="">
+                    <p>СМОТРЕТЬ НОВИНКИ</p>
+                    <img class="mainBlock__captions-subtitle-arrow" src="./images/arrow-right.svg">
+                </a>
+            </div>
+            <img class="mainBlock__pictures-item mainBlock__pictures-item1"
+                src="./images/mainBlock/white_winter_coat.png" alt="white_winter_coat">
+            <div class="mainBlock__pictures-item--for_text mainBlock__pictures-item2">
+                <img class="mainBlock__pictures-item" src="./images/mainBlock/light_overcoat.png" alt="light_overcoat">
                 <div class="mainBlock__captions-title">Новая коллекция</div>
                 <div class="mainBlock__captions-underline"></div>
                 <a class="mainBlock__captions-subtitle" href="">
@@ -76,38 +242,65 @@
                         height="18px">
                 </a>
             </div>
-            <img class="mainBlock__pictures-item" src="./images/mainBlock/warm_coat.png" alt="warm_coat" width="640">
+            <img class="mainBlock__pictures-item mainBlock__pictures-item3" src="./images/mainBlock/warm_coat.png"
+                alt="warm_coat"> -->
+
+
+
+                <img class="mainBlock__pictures-item" src="./images/mainBlock/white_winter_coat.png" alt="light_overcoat">
+                <img class="mainBlock__pictures-item" src="./images/mainBlock/light_overcoat.png" alt="light_overcoat">
+                <img class="mainBlock__pictures-item" src="./images/mainBlock/warm_coat.png" alt="light_overcoat">
+
+
+    <div class="mainBlock__captions">
+        <div class="mainBlock__captions-title">Новая коллекция</div>
+        <div class="mainBlock__captions-underline"></div>
+        <a class="mainBlock__captions-subtitle" href="">
+            <p>СМОТРЕТЬ НОВИНКИ</p>
+            <img class="mainBlock__captions-subtitle-arrow" src="./images/arrow-right.svg">
+        </a>
+    </div>
         </div>
 
         <div class="categories">
             <p class="categories__title">Категории</p>
             <div class="categories__items">
                 <div class="categories__items-item">
-                    <img src="./images/catalog/white_winter_coat.png" width="350px" alt="white_winter_coat">
+                    <img class="categories__items-item-pic" src="./images/catalog/white_winter_coat.png"
+                        alt="white_winter_coat">
                     <div class="categories__items-subtitle">
-                        <a class="categories__items-subtitle-button" href="">Куртки</a>
+                        <a class="categories__items-subtitle-div" href="">Куртки</a>
                     </div>
                 </div>
                 <div class="categories__items-item">
-                    <img src="./images/catalog/dark_light_coat.png" width="350px" alt="dark_light_coat">
+                    <img class="categories__items-item-pic" src="./images/catalog/dark_light_coat.png"
+                        alt="dark_light_coat">
                     <div class="categories__items-subtitle">
-                        <a class="categories__items-subtitle-button" href="">Пальто</a>
+                        <a class="categories__items-subtitle-div" href="">Пальто</a>
                     </div>
+                    <a class="arrowOnTheDarkCoat" href="./catalog.html">
+                        <div class="categories__items-item-div" alt="next">
+                            <img class="categories__items-item-div-arrow" src="./images/arrow-right.svg">
+                        </div>
+                    </a>
                 </div>
-                <div class="categories__items-item">
-                    <img src="./images/catalog/white_warm_coat.png" width="350px" alt="white_warm_coat">
+                <div class="categories__items-item categories__items-item-warmCaot">
+                    <img class="categories__items-item-pic" src="./images/catalog/white_warm_coat.png"
+                        alt="white_warm_coat">
                     <div class="categories__items-subtitle">
-                        <a class="categories__items-subtitle-button" href="">Шубы</a>
+                        <a class="categories__items-subtitle-div" href="">Шубы</a>
                     </div>
+
                 </div>
-                <div class="categories__items-item">
-                    <img src="./images/catalog/dark_winter_jacket.png" width="350px" alt="dark_winter_jacket">
+                <div class="categories__items-item categories__items-item-darkJacket">
+                    <img class="categories__items-item-pic" src="./images/catalog/dark_winter_jacket.png"
+                        alt="dark_winter_jacket">
                     <div class="categories__items-subtitle">
-                        <a class="categories__items-subtitle-button" href="">Парки</a>
+                        <a class="categories__items-subtitle-div" href="">Парки</a>
                     </div>
-                    <a href="">
-                        <div class="categories__items-item-button" alt="next">
-                            <img class="categories__items-item-button-arrow" src="./images/arrow-right.svg" width="35px"
+                    <a href="./catalog.html">
+                        <div class="categories__items-item-div" alt="next">
+                            <img class="categories__items-item-div-arrow" src="./images/arrow-right.svg" width="35px"
                                 height="35px">
                         </div>
                     </a>
@@ -132,50 +325,114 @@
 
 
     <footer>
-    <div class="footer">
-        <div class="footer__company">
-            <p>Компания</p>
-            <div class="footer-flex footer-flex--short">
-                <a href="">О нас</a>
-                <a href="">Контакты</a>
-            </div>
-        </div>
-        <div class="footer__useful">
-            <p>Полезное</p>
-            <div class="footer-flex">
-                <a href="./paymentAndDelivery.html">Оплата и доставка</a>
-                <a href="./exchangeAndReturn.html">Условия возврата</a>
-                <a href="">Бонусная система</a>
-            </div>
-        </div>
-        <div class="footer__for_the_buyer">
-            <p>Покупателю</p>
-            <div class="footer-flex">
-                <a href="">Избранное</a>
-                <a href="">Публичная оферта</a>
-                <a href="">Политика конфиденциальности</a>
-            </div>
-        </div>
-        <div class="footer__contacts">
-            <p>Контакты</p>
-            <div class="footer-flex">
+        <div class="footerForMobile">
+            <div id="accordion">
+                <h3>Компания</h3>
                 <div>
-                    <a href="">
-                        <img src="./images/instagram.svg" alt="instagram" width="25px" height="25px">
-                    </a>
-                    <a class="footer__contacts-telegram" href="">
-                        <img src="./images/telegram.svg" alt="telegram" width="25px" height="25px">
-                    </a>
+                    <ul>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
                 </div>
-                <a href="">+38(073) 096 36 44</a>
-                <a href="">info@yanki.com</a>
+
+                <h3>Полезное</h3>
+                <div>
+                    <ul>
+                        <li><a href="./paymentAndDelivery.html">Оплата и доставка</a></li>
+                        <li><a href="./exchangeAndReturn.html">Условия возврата</a></li>
+                        <li><a href="">Бонусная система</a></li>
+                    </ul>
+                </div>
+
+                <h3>Покупателю</h3>
+                <div>
+                    <ul>
+                        <li><a href="">Избранное</a></li>
+                        <li><a href="">Публичная оферта</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+
+
             </div>
+            <div class="footerContactsAdaptive">
+                <p>Контакты</p>
+                <div class="footer-flex">
+                    <div>
+                        <a href="">
+                            <img class="footer-flex-instagram" src="./images/instagram.svg" alt="instagram" width="25px"
+                                height="25px">
+                        </a>
+                        <a class="footer__contacts-telegram" href="">
+                            <img class="footer-flex-telegram" src="./images/telegram.svg" alt="telegram" width="25px"
+                                height="25px">
+                        </a>
+                    </div>
+                    <a href="tel:+38(073) 096 36 44">+38(073) 096 36 44</a>
+                    <a href="mailto:info@yanki.com">info@yanki.com</a>
+
+
+
+                </div>
+            </div>
+
+
         </div>
 
-    </div>
-</footer>
 
+        <div class="footer">
+            <div class="footer__company">
+                <p>Компания</p>
+                <div class="footer-flex footer-flex--short">
+                    <a href="">О нас</a>
+                    <a href="">Контакты</a>
+                </div>
+            </div>
+            <div class="footer__useful">
+                <p>Полезное</p>
+                <div class="footer-flex">
+                    <a href="./paymentAndDelivery.html">Оплата и доставка</a>
+                    <a href="./exchangeAndReturn.html">Условия возврата</a>
+                    <a href="">Бонусная система</a>
+                </div>
+            </div>
+            <div class="footer__for_the_buyer">
+                <p>Покупателю</p>
+                <div class="footer-flex">
+                    <a href="">Избранное</a>
+                    <a href="">Публичная оферта</a>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <p>Контакты</p>
+                <div class="footer-flex">
+                    <div>
+                        <a href="">
+                            <img class="footer-flex-instagram" src="./images/instagram.svg" alt="instagram">
+                        </a>
+                        <a class="footer__contacts-telegram" href="">
+                            <img class="footer-flex-telegram" src="./images/telegram.svg" alt="telegram">
+                        </a>
+                    </div>
+                    <a href="tel:+38(073) 096 36 44">+38(073) 096 36 44</a>
+                    <a href="mailto:info@yanki.com">info@yanki.com</a>
+                </div>
+            </div>
 
+        </div>
+    </footer>
+
+    <script src="./burger.js"></script>
+    <script>
+        // $('#accordion').accordion({active: true});
+        $(function () {
+            $("#accordion").accordion({
+                active: false,
+                collapsible: true
+            });
+        });
+    </script>
 </body>
 
 </html>

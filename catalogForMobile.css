@@ -1,0 +1,155 @@
+@media (max-width: 375px) {
+    /* #accordion {
+        position: absolute;
+        top: 4000px;
+    } */
+
+    .filter {
+        display: none;
+    }
+
+    .rightColumn {
+        display: none;
+    }
+
+    .catalog__item {
+        width: 165px;
+        /* height: 230px; */
+    }
+
+    .catalog__item-img {
+        width: 165px;
+        height: 230px;
+    }
+
+    .catalog {
+        width: 335px;
+        grid-template-columns: 165px 165px;
+        grid-gap: 5px;
+        margin: 15px 20px;
+    }
+
+    .hidden-for-mobile {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+    .forCatalog {
+        position: absolute;
+        top: 2400px;
+        right: 20px;
+        height: 350px;
+    }
+
+
+
+
+    .catalogAccordionForMobile,
+    .filterAccordionForMobile {
+        display: unset;
+    }
+
+    #accordion2 {
+        width: 335px;
+        
+        margin: 15px auto;
+    }
+
+    #accordion2 .ui-state-active {
+        background-color: #E0BEA2;
+        color: white;
+      }
+
+      #accordion2 .ui-state-default {
+        border: unset;
+        
+        background: #E0BEA2;
+        font-weight: 300;
+        color: white;
+    }
+
+    #accordion2 .ui-corner-all {
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: unset;
+        border-top-left-radius: unset;
+    }
+
+    #accordion2 .ui-accordion-header-icon {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 105px;    
+        display: inline-block;
+        width: 20px;
+        height: 13px;    
+        background: url(./images/arrow-down.svg) 50% 50% no-repeat;
+    }
+
+    #accordion2 .ui-accordion-header-active .ui-accordion-header-icon {
+        background-image: url(./images/arrow-down.svg);
+    }
+
+    #accordion2 li {
+        list-style-type: none;
+    }
+
+    #accordion3 {
+        width: 335px;
+        margin: auto;
+    }
+
+    #accordion3 .ui-state-active {
+        background-color: #E0BEA2;
+        color: white;
+      }
+
+      #accordion3 .ui-accordion-header {
+        text-align:left;
+    }
+
+    #accordion3 .ui-state-default {
+        border: unset;
+        border-bottom: 1px solid black;
+        background: white;
+        font-weight: 300;
+        color: black;
+    }
+
+    #accordion3 .ui-corner-all {
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: unset;
+    }
+
+    #accordion3 .ui-accordion-header-icon {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 1px;    
+        display: inline-block;
+        width: 20px;
+        height: 13px;    
+        background: url(./images/arrow-down-colored.svg) 50% 50% no-repeat;
+    }
+
+    #accordion3 .ui-accordion-header-active .ui-accordion-header-icon {
+        background-image: url(./arrow-down-colored.svg);
+    }
+
+    #accordion3 li {
+        list-style-type: none;
+    }
+
+    .filterAccordionForMobile label {
+        font-size: 14px;
+    }
+
+}

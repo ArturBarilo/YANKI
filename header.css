@@ -80,18 +80,27 @@ a {
 .header__nav-new--black,
 .header__nav-aboutUs--black {
     color: black;
-    font-weight: 900;
+    font-weight: 300;
 }
 
 .header__nav-catalog--colored {
     color: #E0BEA2;
-    font-weight: 900;
+    font-weight: 300;
 }
 
 .header__logo {
     position: absolute;
     left: 46%;
     top: 21px;
+}
+
+.header__logo-pic {
+    width: 180px;
+    height: 47px;
+}
+
+.logo-forMobile{
+    display: none;
 }
 
 .header__languages {}
@@ -108,7 +117,7 @@ a {
 
 .header__languages-language--black {
     color: black;
-    font-weight: 900;
+    font-weight: 300;
 }
 
 .header__languages-arrow {
@@ -129,7 +138,7 @@ a {
 
 .header__currencys-currency--black {
     color: black;
-    font-weight: 900;
+    font-weight: 300;
 }
 
 .header__currencys-arrow {
@@ -150,6 +159,7 @@ a {
     min-width: 125px;
 }
 
-.er {
+/* .er {
     margin-top: 50px;
-}
+} */
+

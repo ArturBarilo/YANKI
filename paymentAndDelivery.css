@@ -1,3 +1,11 @@
+.burgerContentforDesktop {
+    display: unset;
+}
+
+.burgerContentforMobile {
+    display: none;
+}
+
 .info__details-text-payment-ways,
 .info__details-text-delivery-ways {
     margin-bottom: 25px;
@@ -51,8 +59,8 @@ li {
     position: relative;
     bottom: 34px;
     left: 6px;
-    font-size: 14px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 300;
     color: white;
 }
 
@@ -71,4 +79,9 @@ li {
     flex-direction: row;
     justify-content: space-between;
     margin-right: 200px;
+}
+
+.triangle-colored {
+    width: 35px;
+    height: 40px;
 }
