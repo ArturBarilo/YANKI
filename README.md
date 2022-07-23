@@ -1,3 +1,3 @@
 # YANKI
 
-Resolution: width 1080px and width 375px 
+Resolution: width 1920px and width 375px 
